@@ -113,16 +113,17 @@ body.dark-theme{
     align-items: center;flex-wrap: wrap;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 0.5rem;
 }
 .home .image{
     flex: 1 1 40rem;
     padding: 1rem;
     text-align: center;
-    
+
 }
 .home .image img{
-    height: 60rem;
-   
+    height: 40rem;
+   width: 55rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
     border-top: 1rem solid var(--main-color);
     border-right: 1rem solid var(--main-color);
@@ -133,6 +134,8 @@ body.dark-theme{
 .home .content{
     flex: 1 1 40rem;
     padding: 1rem;
+    margin-left: 6rem;
+   
 }
 .home .content .hello{
     background: #00a78e;
@@ -201,11 +204,13 @@ body.dark-theme{
 .btn:hover{
     color: var(--primary-text-color);
 }
+
 .about .row{
    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
+    
 }
 .skills:hover{
     box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
@@ -235,8 +240,7 @@ body.dark-theme{
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1 rem rgba(0,0,0,0.1);
     padding: 0.5rem 1.5rem;
-    margin: 6rem;
-    
+    margin: 3rem;
 }
 .about .box .title{
     color:var(--primary-text-color);
@@ -316,7 +320,9 @@ padding: 1rem 0;
     width: 2rem;
     background:#00a78e;
 }
-
+.service{
+    margin-top: 0.5rem;
+}
 .service .box-container{
     display: flex;
     align-items: center;
@@ -376,7 +382,9 @@ padding: 1rem 0;
 .service .box-container .box:hover::before{
     clip-path: circle(100%);
 }
-
+.portfolio{
+    margin-top: 0.5rem;
+}
 .portfolio .button-container{
     display: flex;
     align-items: center;
@@ -403,8 +411,9 @@ box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 overflow: hidden;
 height: 25rem;
 position: relative;
-border: 1.5rem solid var(--primary-bg-color);
+border: 1rem solid var(--primary-bg-color);
 cursor: pointer;
+
 }
 .portfolio .image-container .box img{
     height: 100%;
@@ -431,6 +440,9 @@ cursor: pointer;
 .portfolio .image-container .box .info h3{
     font-size: 2.5rem;
     color: #252c48;
+}
+.blog{
+    margin-top: 0.5rem;
 }
 .blog .box-container{
     display: flex;
@@ -486,7 +498,9 @@ cursor: pointer;
     padding: 0.5rem 0;
     font-size: 1.5rem;
 }
-
+.contact{
+    margin-top: 0.5rem;
+}
 .contact .box-container{
     display: flex;
     justify-content: space-between;
@@ -601,8 +615,23 @@ flex-wrap: wrap;
     html{
         font-size: 50%;
     }
+    .home .content {
+       margin-top: 2px;
+        font-size: 4px;
+    }
+.home .image img{
+    height: 45rem;
+    width: 45rem;
+}
+    .home .content p{
+        color: var(--primary-text-color);
+    }
+    .home{
+        margin-top: 1rem;
+    }
+    
     .service .box-container .box{
-        width: 100%;
+        width: 90%;
     }
     .portfolio .image-container .box{
         width: 100%;
